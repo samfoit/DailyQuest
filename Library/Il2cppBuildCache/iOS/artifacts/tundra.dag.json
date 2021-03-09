@@ -1,0 +1,160 @@
+{
+  "Nodes": [
+    {
+      "Annotation": "all_tundra_nodes",
+      "Action": "",
+      "Inputs": [],
+      "Outputs": [],
+      "TargetDirectories": [],
+      "PassIndex": 0,
+      "Deps": [
+        1,
+        2,
+        3
+      ],
+      "OverwriteOutputs": true,
+      "FrontendResponseFiles": [],
+      "AllowUnexpectedOutput": true,
+      "AllowedOutputSubstrings": [],
+      "DebugActionIndex": 0
+    },
+    {
+      "Annotation": "Il2Cpp /Users/samfoit/Desktop/Unity/Repos/DailyQuest/Library/Il2cppBuildCache/iOS/il2cppOutput",
+      "Action": "\"/Applications/Unity/Hub/Editor/2020.2.2f1/Unity.app/Contents/il2cpp/build/deploy/netcoreapp3.1/il2cpp\" --convert-to-cpp --emit-null-checks --enable-array-bounds-check --dotnetprofile=\"unityaot\" --additional-cpp=\"/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityClassRegistration.cpp\" --additional-cpp=\"/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityICallRegistration.cpp\" --avoid-dynamic-library-copy --profiler-report --map-file-parser=\"/Applications/Unity/Hub/Editor/2020.2.2f1/Unity.app/Contents/Tools/MapFileParser/MapFileParser\" --directory=\"/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed\" --generatedcppdir=\"/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Library/Il2cppBuildCache/iOS/il2cppOutput\"",
+      "Inputs": [
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed",
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed/Assembly-CSharp.dll",
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed/Cinemachine.dll",
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed/Mono.Security.dll",
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed/System.Configuration.dll",
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed/System.Core.dll",
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed/System.Xml.dll",
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed/System.dll",
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed/Unity.TextMeshPro.dll",
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed/Unity.Timeline.dll",
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed/UnityEngine.AnimationModule.dll",
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed/UnityEngine.AudioModule.dll",
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed/UnityEngine.CoreModule.dll",
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed/UnityEngine.DirectorModule.dll",
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed/UnityEngine.GameCenterModule.dll",
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed/UnityEngine.GridModule.dll",
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed/UnityEngine.IMGUIModule.dll",
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed/UnityEngine.InputLegacyModule.dll",
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed/UnityEngine.ParticleSystemModule.dll",
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed/UnityEngine.Physics2DModule.dll",
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed/UnityEngine.PhysicsModule.dll",
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed/UnityEngine.SpriteShapeModule.dll",
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed/UnityEngine.TextCoreModule.dll",
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed/UnityEngine.TextRenderingModule.dll",
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed/UnityEngine.TilemapModule.dll",
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed/UnityEngine.UI.dll",
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed/UnityEngine.UIModule.dll",
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed/UnityEngine.dll",
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Temp/StagingArea/Data/Managed/mscorlib.dll"
+      ],
+      "Outputs": [],
+      "TargetDirectories": [
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Library/Il2cppBuildCache/iOS/il2cppOutput"
+      ],
+      "PassIndex": 0,
+      "Deps": [],
+      "OverwriteOutputs": false,
+      "FrontendResponseFiles": [],
+      "AllowUnexpectedOutput": true,
+      "AllowedOutputSubstrings": [],
+      "DebugActionIndex": 1
+    },
+    {
+      "Annotation": "Copy Additional C++ File /Users/samfoit/Desktop/Unity/Repos/DailyQuest/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityClassRegistration.cpp",
+      "Action": "cp \"/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityClassRegistration.cpp\" \"/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityClassRegistration.cpp\" ",
+      "Inputs": [
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityClassRegistration.cpp"
+      ],
+      "Outputs": [
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityClassRegistration.cpp"
+      ],
+      "TargetDirectories": [],
+      "PassIndex": 0,
+      "Deps": [
+        1
+      ],
+      "OverwriteOutputs": true,
+      "FrontendResponseFiles": [],
+      "AllowUnexpectedOutput": true,
+      "AllowedOutputSubstrings": [],
+      "DebugActionIndex": 2
+    },
+    {
+      "Annotation": "Copy Additional C++ File /Users/samfoit/Desktop/Unity/Repos/DailyQuest/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityICallRegistration.cpp",
+      "Action": "cp \"/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityICallRegistration.cpp\" \"/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityICallRegistration.cpp\" ",
+      "Inputs": [
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityICallRegistration.cpp"
+      ],
+      "Outputs": [
+        "/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityICallRegistration.cpp"
+      ],
+      "TargetDirectories": [],
+      "PassIndex": 0,
+      "Deps": [
+        1
+      ],
+      "OverwriteOutputs": true,
+      "FrontendResponseFiles": [],
+      "AllowUnexpectedOutput": true,
+      "AllowedOutputSubstrings": [],
+      "DebugActionIndex": 3
+    }
+  ],
+  "FileSignatures": [
+    {
+      "File": "../../../../../../../Library"
+    },
+    {
+      "File": "../../../Temp/StagingArea/Data/Managed"
+    },
+    {
+      "File": "artifacts/buildprogram/tundra_buildprogram.dag.json"
+    },
+    {
+      "File": "il2cpp_settings.json"
+    },
+    {
+      "File": "unitylinker_settings.json"
+    }
+  ],
+  "GlobSignatures": [
+    {
+      "Path": "../../../Temp/StagingArea/Data/Managed"
+    }
+  ],
+  "ContentDigestExtensions": [
+    ".rsp",
+    ".dll",
+    ".exe",
+    ".txt",
+    ".c",
+    ".cpp",
+    ".h",
+    ".cs",
+    ".hpp"
+  ],
+  "StructuredLogFileName": "artifacts/tundra.log.json",
+  "StateFileName": "artifacts/TundraBuildState.state",
+  "StateFileNameTmp": "artifacts/TundraBuildState.state.tmp",
+  "ScanCacheFileName": "artifacts/tundra.scancache",
+  "ScanCacheFileNameTmp": "artifacts/tundra.scancache.tmp",
+  "DigestCacheFileName": "artifacts/tundra.digestcache",
+  "DigestCacheFileNameTmp": "artifacts/tundra.digestcache.tmp",
+        "NamedNodes": {
+          "all_tundra_nodes": 0
+        }
+,  "DefaultNodes": [
+    0
+  ],
+  "SharedResources": [],
+  "Scanners": [],
+  "Identifier": "artifacts/tundra.dag.json",
+  "BuildTitle": "Bee",
+  "RelativePathToRoot": ".."
+}
