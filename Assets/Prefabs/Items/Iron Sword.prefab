@@ -113,5 +113,5 @@ MonoBehaviour:
   weaponStrength: 15
   armorStrength: 0
   abilityStrength: 0
-  projectile: {fileID: 8038264601086937421, guid: 5760daa0f2155488d8c315dc614bcb59,
+  projectile: {fileID: 8038264601086937421, guid: 4b3acce643c0c4d138dc7473d8259d6d,
     type: 3}

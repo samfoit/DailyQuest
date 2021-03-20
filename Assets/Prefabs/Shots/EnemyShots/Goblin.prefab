@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -100042085
+  m_SortingLayerID: -520008307
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -2230846602583954849, guid: 0bc4ed27aef38a44bb72e80f9beb5326,
@@ -127,6 +127,7 @@ MonoBehaviour:
   damage: 18
   speed: 6
   rigidBody: {fileID: 0}
+  rotate: 0
   lifeTime: 1
 --- !u!50 &-312779670468484303
 Rigidbody2D:

@@ -70,7 +70,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -100042085
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2178467043915682464, guid: 0bc4ed27aef38a44bb72e80f9beb5326,
     type: 3}
@@ -100,15 +100,18 @@ MonoBehaviour:
   isWeapon: 1
   isArmor: 0
   isAbility: 0
+  isCurrency: 0
   itemName: Wooden Sword
   description: +5 ATK
   value: 35
   itemSprite: {fileID: -2178467043915682464, guid: 0bc4ed27aef38a44bb72e80f9beb5326,
     type: 3}
-  amountToChange: 0
+  percentChange: 0
   affectHp: 0
   affectMP: 0
   affectStr: 0
   weaponStrength: 5
   armorStrength: 0
   abilityStrength: 0
+  projectile: {fileID: 8038264601086937421, guid: 4b3acce643c0c4d138dc7473d8259d6d,
+    type: 3}

@@ -1,1 +1,7 @@
 {"msg":"init","dagFile":"artifacts/tundra.dag","targets":[]}
+{"msg":"nodeOutputsMissing","annotation":"Il2Cpp /Users/samfoit/Desktop/Unity/Repos/DailyQuest/Library/Il2cppBuildCache/iOS/il2cppOutput","index":1,"files":[],"directories":[]}
+{"msg":"noderesult","annotation":"Il2Cpp /Users/samfoit/Desktop/Unity/Repos/DailyQuest/Library/Il2cppBuildCache/iOS/il2cppOutput","index":1,"exitcode":0}
+{"msg":"nodeOutputsMissing","annotation":"Copy Additional C++ File /Users/samfoit/Desktop/Unity/Repos/DailyQuest/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityClassRegistration.cpp","index":2,"files":["/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityClassRegistration.cpp"],"directories":[]}
+{"msg":"nodeOutputsMissing","annotation":"Copy Additional C++ File /Users/samfoit/Desktop/Unity/Repos/DailyQuest/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityICallRegistration.cpp","index":3,"files":["/Users/samfoit/Desktop/Unity/Repos/DailyQuest/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityICallRegistration.cpp"],"directories":[]}
+{"msg":"noderesult","annotation":"Copy Additional C++ File /Users/samfoit/Desktop/Unity/Repos/DailyQuest/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityClassRegistration.cpp","index":2,"exitcode":0}
+{"msg":"noderesult","annotation":"Copy Additional C++ File /Users/samfoit/Desktop/Unity/Repos/DailyQuest/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityICallRegistration.cpp","index":3,"exitcode":0}
