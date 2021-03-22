@@ -36,6 +36,7 @@ public class Task : MonoBehaviour
         {
             endTime -= 12;
         }
+        if (startTime > endTime) { endTime += 24; }
         if (PlayerPrefs.HasKey("TASK" + taskNumber + "DATE"))
         {
             day = PlayerPrefs.GetInt("TASK" + taskNumber + "DATE");
@@ -49,31 +50,38 @@ public class Task : MonoBehaviour
 
     private void Update()
     {
-        if (Past() || day != System.DateTime.Now.Day)
+        if (System.DateTime.Now.Day == day || startTime > endTime)
+        {
+            if (Past() || day != System.DateTime.Now.Day)
+            {
+                completeButton.interactable = true;
+            }
+            else if (!Past())
+            {
+                completeButton.interactable = false;
+            }
+
+            if (During())
+            {
+                timeToFocus = true;
+            }
+            else if (!During())
+            {
+                timeToFocus = false;
+            }
+
+            if (timeToFocus)
+            {
+                focus.SetActive(true);
+            }
+            else if (!timeToFocus)
+            {
+                focus.SetActive(false);
+            }
+        }
+        else
         {
             completeButton.interactable = true;
-        }
-        else if (!Past())
-        {
-            completeButton.interactable = false;
-        }
-
-        if (During())
-        {
-            timeToFocus = true;
-        }
-        else if (!During())
-        {
-            timeToFocus = false;
-        }
-
-        if (timeToFocus)
-        {
-            focus.SetActive(true);
-        }
-        else if (!timeToFocus)
-        {
-            focus.SetActive(false);
         }
     }
 
@@ -164,7 +172,22 @@ public class Task : MonoBehaviour
         float end = BaseTen(endTime);
         float start = BaseTen(startTime);
 
-        return start <= current && current < end;
+
+        if (start > end)
+        {
+            if (current >= start)
+            {
+                return start <= current;
+            }
+            else
+            {
+                return current <= end;
+            }
+        }
+        else
+        {
+            return start <= current && current < end;
+        }
     }
 
     /// <summary>
@@ -179,7 +202,22 @@ public class Task : MonoBehaviour
         float end = BaseTen(endTime);
         float start = BaseTen(startTime);
 
-        return current >= end && current >= start;
+
+        if (start > end)
+        {
+            if (current >= start)
+            {
+                return false;
+            }
+            else
+            {
+                return current >= end;
+            }
+        }
+        else
+        {
+            return current >= end;
+        }
     }
 
     private float BaseTen(float time)

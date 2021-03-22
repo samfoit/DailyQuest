@@ -12496,51 +12496,67 @@ IL_0063:
 
 IL_00a7:
 	{
-		// if (PlayerPrefs.HasKey("TASK" + taskNumber + "DATE"))
-		int32_t* L_14 = __this->get_address_of_taskNumber_4();
-		String_t* L_15;
-		L_15 = Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411((int32_t*)L_14, /*hidden argument*/NULL);
-		String_t* L_16;
-		L_16 = String_Concat_m89EAB4C6A96B0E5C3F87300D6BE78D386B9EFC44(_stringLiteral343A8BFF2C4C59A68AD84262A8768E1834954326, L_15, _stringLiteral7E9E9672DF3B05E1C28B66441BA9291DC5162509, /*hidden argument*/NULL);
-		bool L_17;
-		L_17 = PlayerPrefs_HasKey_m48BE5886380B51AB495B91C9A26115B7CB958A92(L_16, /*hidden argument*/NULL);
-		if (!L_17)
+		// if (startTime > endTime) { endTime += 24; }
+		float L_14 = __this->get_startTime_9();
+		float L_15 = __this->get_endTime_10();
+		if ((!(((float)L_14) > ((float)L_15))))
 		{
-			goto IL_00ee;
+			goto IL_00c7;
+		}
+	}
+	{
+		// if (startTime > endTime) { endTime += 24; }
+		float L_16 = __this->get_endTime_10();
+		__this->set_endTime_10(((float)il2cpp_codegen_add((float)L_16, (float)(24.0f))));
+	}
+
+IL_00c7:
+	{
+		// if (PlayerPrefs.HasKey("TASK" + taskNumber + "DATE"))
+		int32_t* L_17 = __this->get_address_of_taskNumber_4();
+		String_t* L_18;
+		L_18 = Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411((int32_t*)L_17, /*hidden argument*/NULL);
+		String_t* L_19;
+		L_19 = String_Concat_m89EAB4C6A96B0E5C3F87300D6BE78D386B9EFC44(_stringLiteral343A8BFF2C4C59A68AD84262A8768E1834954326, L_18, _stringLiteral7E9E9672DF3B05E1C28B66441BA9291DC5162509, /*hidden argument*/NULL);
+		bool L_20;
+		L_20 = PlayerPrefs_HasKey_m48BE5886380B51AB495B91C9A26115B7CB958A92(L_19, /*hidden argument*/NULL);
+		if (!L_20)
+		{
+			goto IL_010e;
 		}
 	}
 	{
 		// day = PlayerPrefs.GetInt("TASK" + taskNumber + "DATE");
-		int32_t* L_18 = __this->get_address_of_taskNumber_4();
-		String_t* L_19;
-		L_19 = Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411((int32_t*)L_18, /*hidden argument*/NULL);
-		String_t* L_20;
-		L_20 = String_Concat_m89EAB4C6A96B0E5C3F87300D6BE78D386B9EFC44(_stringLiteral343A8BFF2C4C59A68AD84262A8768E1834954326, L_19, _stringLiteral7E9E9672DF3B05E1C28B66441BA9291DC5162509, /*hidden argument*/NULL);
-		int32_t L_21;
-		L_21 = PlayerPrefs_GetInt_m6BCF9F844298D1810A68BAF23ECBA68C6960A986(L_20, /*hidden argument*/NULL);
-		__this->set_day_15(L_21);
+		int32_t* L_21 = __this->get_address_of_taskNumber_4();
+		String_t* L_22;
+		L_22 = Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411((int32_t*)L_21, /*hidden argument*/NULL);
+		String_t* L_23;
+		L_23 = String_Concat_m89EAB4C6A96B0E5C3F87300D6BE78D386B9EFC44(_stringLiteral343A8BFF2C4C59A68AD84262A8768E1834954326, L_22, _stringLiteral7E9E9672DF3B05E1C28B66441BA9291DC5162509, /*hidden argument*/NULL);
+		int32_t L_24;
+		L_24 = PlayerPrefs_GetInt_m6BCF9F844298D1810A68BAF23ECBA68C6960A986(L_23, /*hidden argument*/NULL);
+		__this->set_day_15(L_24);
 		// }
 		return;
 	}
 
-IL_00ee:
+IL_010e:
 	{
 		// day = System.DateTime.Now.Day;
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405_il2cpp_TypeInfo_var);
-		DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  L_22;
-		L_22 = DateTime_get_Now_mCAC695993D6E2C57B900C83BEF3F8B18BC4EBC2C(/*hidden argument*/NULL);
-		V_0 = L_22;
-		int32_t L_23;
-		L_23 = DateTime_get_Day_m9D698CA2A7D1FBEE7BEC0A982A119239F513CBA8((DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405 *)(&V_0), /*hidden argument*/NULL);
-		__this->set_day_15(L_23);
+		DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  L_25;
+		L_25 = DateTime_get_Now_mCAC695993D6E2C57B900C83BEF3F8B18BC4EBC2C(/*hidden argument*/NULL);
+		V_0 = L_25;
+		int32_t L_26;
+		L_26 = DateTime_get_Day_m9D698CA2A7D1FBEE7BEC0A982A119239F513CBA8((DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405 *)(&V_0), /*hidden argument*/NULL);
+		__this->set_day_15(L_26);
 		// PlayerPrefs.SetInt("TASK" + taskNumber + "DATE", day);
-		int32_t* L_24 = __this->get_address_of_taskNumber_4();
-		String_t* L_25;
-		L_25 = Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411((int32_t*)L_24, /*hidden argument*/NULL);
-		String_t* L_26;
-		L_26 = String_Concat_m89EAB4C6A96B0E5C3F87300D6BE78D386B9EFC44(_stringLiteral343A8BFF2C4C59A68AD84262A8768E1834954326, L_25, _stringLiteral7E9E9672DF3B05E1C28B66441BA9291DC5162509, /*hidden argument*/NULL);
-		int32_t L_27 = __this->get_day_15();
-		PlayerPrefs_SetInt_m0C5C977E960B9CA8F9AB73AF4129C3DCABD067B6(L_26, L_27, /*hidden argument*/NULL);
+		int32_t* L_27 = __this->get_address_of_taskNumber_4();
+		String_t* L_28;
+		L_28 = Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411((int32_t*)L_27, /*hidden argument*/NULL);
+		String_t* L_29;
+		L_29 = String_Concat_m89EAB4C6A96B0E5C3F87300D6BE78D386B9EFC44(_stringLiteral343A8BFF2C4C59A68AD84262A8768E1834954326, L_28, _stringLiteral7E9E9672DF3B05E1C28B66441BA9291DC5162509, /*hidden argument*/NULL);
+		int32_t L_30 = __this->get_day_15();
+		PlayerPrefs_SetInt_m0C5C977E960B9CA8F9AB73AF4129C3DCABD067B6(L_29, L_30, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -12557,80 +12573,104 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Task_Update_m4817BD63E4DF68E7B77A9BCA2F6
 	DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		// if (Past() || day != System.DateTime.Now.Day)
-		bool L_0;
-		L_0 = Task_Past_m156DE3C4ECE8808528205C0A5829B7A7920AD224(__this, /*hidden argument*/NULL);
-		if (L_0)
-		{
-			goto IL_001d;
-		}
-	}
-	{
-		int32_t L_1 = __this->get_day_15();
+		// if (System.DateTime.Now.Day == day || startTime > endTime)
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405_il2cpp_TypeInfo_var);
-		DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  L_2;
-		L_2 = DateTime_get_Now_mCAC695993D6E2C57B900C83BEF3F8B18BC4EBC2C(/*hidden argument*/NULL);
-		V_0 = L_2;
-		int32_t L_3;
-		L_3 = DateTime_get_Day_m9D698CA2A7D1FBEE7BEC0A982A119239F513CBA8((DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405 *)(&V_0), /*hidden argument*/NULL);
-		if ((((int32_t)L_1) == ((int32_t)L_3)))
+		DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  L_0;
+		L_0 = DateTime_get_Now_mCAC695993D6E2C57B900C83BEF3F8B18BC4EBC2C(/*hidden argument*/NULL);
+		V_0 = L_0;
+		int32_t L_1;
+		L_1 = DateTime_get_Day_m9D698CA2A7D1FBEE7BEC0A982A119239F513CBA8((DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405 *)(&V_0), /*hidden argument*/NULL);
+		int32_t L_2 = __this->get_day_15();
+		if ((((int32_t)L_1) == ((int32_t)L_2)))
 		{
-			goto IL_002b;
+			goto IL_0026;
+		}
+	}
+	{
+		float L_3 = __this->get_startTime_9();
+		float L_4 = __this->get_endTime_10();
+		if ((!(((float)L_3) > ((float)L_4))))
+		{
+			goto IL_00af;
 		}
 	}
 
-IL_001d:
+IL_0026:
 	{
-		// completeButton.interactable = true;
-		Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * L_4 = __this->get_completeButton_7();
-		NullCheck(L_4);
-		Selectable_set_interactable_mE6F57D33A9E0484377174D0F490C4372BF7F0D40(L_4, (bool)1, /*hidden argument*/NULL);
-		// }
-		goto IL_003f;
-	}
-
-IL_002b:
-	{
-		// else if (!Past())
+		// if (Past() || day != System.DateTime.Now.Day)
 		bool L_5;
 		L_5 = Task_Past_m156DE3C4ECE8808528205C0A5829B7A7920AD224(__this, /*hidden argument*/NULL);
 		if (L_5)
 		{
-			goto IL_003f;
+			goto IL_0043;
+		}
+	}
+	{
+		int32_t L_6 = __this->get_day_15();
+		IL2CPP_RUNTIME_CLASS_INIT(DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405_il2cpp_TypeInfo_var);
+		DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  L_7;
+		L_7 = DateTime_get_Now_mCAC695993D6E2C57B900C83BEF3F8B18BC4EBC2C(/*hidden argument*/NULL);
+		V_0 = L_7;
+		int32_t L_8;
+		L_8 = DateTime_get_Day_m9D698CA2A7D1FBEE7BEC0A982A119239F513CBA8((DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405 *)(&V_0), /*hidden argument*/NULL);
+		if ((((int32_t)L_6) == ((int32_t)L_8)))
+		{
+			goto IL_0051;
+		}
+	}
+
+IL_0043:
+	{
+		// completeButton.interactable = true;
+		Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * L_9 = __this->get_completeButton_7();
+		NullCheck(L_9);
+		Selectable_set_interactable_mE6F57D33A9E0484377174D0F490C4372BF7F0D40(L_9, (bool)1, /*hidden argument*/NULL);
+		// }
+		goto IL_0065;
+	}
+
+IL_0051:
+	{
+		// else if (!Past())
+		bool L_10;
+		L_10 = Task_Past_m156DE3C4ECE8808528205C0A5829B7A7920AD224(__this, /*hidden argument*/NULL);
+		if (L_10)
+		{
+			goto IL_0065;
 		}
 	}
 	{
 		// completeButton.interactable = false;
-		Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * L_6 = __this->get_completeButton_7();
-		NullCheck(L_6);
-		Selectable_set_interactable_mE6F57D33A9E0484377174D0F490C4372BF7F0D40(L_6, (bool)0, /*hidden argument*/NULL);
+		Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * L_11 = __this->get_completeButton_7();
+		NullCheck(L_11);
+		Selectable_set_interactable_mE6F57D33A9E0484377174D0F490C4372BF7F0D40(L_11, (bool)0, /*hidden argument*/NULL);
 	}
 
-IL_003f:
+IL_0065:
 	{
 		// if (During())
-		bool L_7;
-		L_7 = Task_During_m6CF0C61ECA5B3E3520823D2FCBDB8C99187E793D(__this, /*hidden argument*/NULL);
-		if (!L_7)
+		bool L_12;
+		L_12 = Task_During_m6CF0C61ECA5B3E3520823D2FCBDB8C99187E793D(__this, /*hidden argument*/NULL);
+		if (!L_12)
 		{
-			goto IL_0050;
+			goto IL_0076;
 		}
 	}
 	{
 		// timeToFocus = true;
 		__this->set_timeToFocus_12((bool)1);
 		// }
-		goto IL_005f;
+		goto IL_0085;
 	}
 
-IL_0050:
+IL_0076:
 	{
 		// else if (!During())
-		bool L_8;
-		L_8 = Task_During_m6CF0C61ECA5B3E3520823D2FCBDB8C99187E793D(__this, /*hidden argument*/NULL);
-		if (L_8)
+		bool L_13;
+		L_13 = Task_During_m6CF0C61ECA5B3E3520823D2FCBDB8C99187E793D(__this, /*hidden argument*/NULL);
+		if (L_13)
 		{
-			goto IL_005f;
+			goto IL_0085;
 		}
 	}
 	{
@@ -12638,41 +12678,51 @@ IL_0050:
 		__this->set_timeToFocus_12((bool)0);
 	}
 
-IL_005f:
+IL_0085:
 	{
 		// if (timeToFocus)
-		bool L_9 = __this->get_timeToFocus_12();
-		if (!L_9)
+		bool L_14 = __this->get_timeToFocus_12();
+		if (!L_14)
 		{
-			goto IL_0074;
+			goto IL_009a;
 		}
 	}
 	{
 		// focus.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_10 = __this->get_focus_13();
-		NullCheck(L_10);
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_10, (bool)1, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_15 = __this->get_focus_13();
+		NullCheck(L_15);
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_15, (bool)1, /*hidden argument*/NULL);
 		// }
 		return;
 	}
 
-IL_0074:
+IL_009a:
 	{
 		// else if (!timeToFocus)
-		bool L_11 = __this->get_timeToFocus_12();
-		if (L_11)
+		bool L_16 = __this->get_timeToFocus_12();
+		if (L_16)
 		{
-			goto IL_0088;
+			goto IL_00bb;
 		}
 	}
 	{
 		// focus.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_12 = __this->get_focus_13();
-		NullCheck(L_12);
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_12, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_17 = __this->get_focus_13();
+		NullCheck(L_17);
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_17, (bool)0, /*hidden argument*/NULL);
+		// }
+		return;
 	}
 
-IL_0088:
+IL_00af:
+	{
+		// completeButton.interactable = true;
+		Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * L_18 = __this->get_completeButton_7();
+		NullCheck(L_18);
+		Selectable_set_interactable_mE6F57D33A9E0484377174D0F490C4372BF7F0D40(L_18, (bool)1, /*hidden argument*/NULL);
+	}
+
+IL_00bb:
 	{
 		// }
 		return;
@@ -13028,16 +13078,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Task_During_m6CF0C61ECA5B3E3520823D2FCBD
 	String_t* V_0 = NULL;
 	float V_1 = 0.0f;
 	float V_2 = 0.0f;
-	DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  V_3;
-	memset((&V_3), 0, sizeof(V_3));
+	float V_3 = 0.0f;
+	DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  V_4;
+	memset((&V_4), 0, sizeof(V_4));
 	{
 		// string currentTime = System.DateTime.Now.ToString("HH:mm");
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405_il2cpp_TypeInfo_var);
 		DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  L_0;
 		L_0 = DateTime_get_Now_mCAC695993D6E2C57B900C83BEF3F8B18BC4EBC2C(/*hidden argument*/NULL);
-		V_3 = L_0;
+		V_4 = L_0;
 		String_t* L_1;
-		L_1 = DateTime_ToString_m19ECEFF7BA22ED4425F7562A82A1C2308E934204((DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405 *)(&V_3), _stringLiteral18FF4EE509547E9F427ED4CBAD56460397F93F60, /*hidden argument*/NULL);
+		L_1 = DateTime_ToString_m19ECEFF7BA22ED4425F7562A82A1C2308E934204((DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405 *)(&V_4), _stringLiteral18FF4EE509547E9F427ED4CBAD56460397F93F60, /*hidden argument*/NULL);
 		V_0 = L_1;
 		// currentTime = currentTime.Replace(":", ".");
 		String_t* L_2 = V_0;
@@ -13061,20 +13112,56 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Task_During_m6CF0C61ECA5B3E3520823D2FCBD
 		float L_9 = __this->get_startTime_9();
 		float L_10;
 		L_10 = Task_BaseTen_m6BD2B110CC4166D7FD4E59D5A0D93D957D80DD01(__this, L_9, /*hidden argument*/NULL);
-		// return start <= current && current < end;
-		float L_11 = V_1;
-		if ((!(((float)L_10) <= ((float)L_11))))
+		V_3 = L_10;
+		// if (start > end)
+		float L_11 = V_3;
+		float L_12 = V_2;
+		if ((!(((float)L_11) > ((float)L_12))))
 		{
-			goto IL_0052;
+			goto IL_0064;
 		}
 	}
 	{
-		float L_12 = V_1;
-		float L_13 = V_2;
-		return (bool)((((float)L_12) < ((float)L_13))? 1 : 0);
+		// if (current >= start)
+		float L_13 = V_1;
+		float L_14 = V_3;
+		if ((!(((float)L_13) >= ((float)L_14))))
+		{
+			goto IL_005c;
+		}
+	}
+	{
+		// return start <= current;
+		float L_15 = V_3;
+		float L_16 = V_1;
+		return (bool)((((int32_t)((!(((float)L_15) <= ((float)L_16)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 
-IL_0052:
+IL_005c:
+	{
+		// return current <= end;
+		float L_17 = V_1;
+		float L_18 = V_2;
+		return (bool)((((int32_t)((!(((float)L_17) <= ((float)L_18)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+	}
+
+IL_0064:
+	{
+		// return start <= current && current < end;
+		float L_19 = V_3;
+		float L_20 = V_1;
+		if ((!(((float)L_19) <= ((float)L_20))))
+		{
+			goto IL_006d;
+		}
+	}
+	{
+		float L_21 = V_1;
+		float L_22 = V_2;
+		return (bool)((((float)L_21) < ((float)L_22))? 1 : 0);
+	}
+
+IL_006d:
 	{
 		return (bool)0;
 	}
@@ -13129,23 +13216,42 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Task_Past_m156DE3C4ECE8808528205C0A5829B
 		float L_10;
 		L_10 = Task_BaseTen_m6BD2B110CC4166D7FD4E59D5A0D93D957D80DD01(__this, L_9, /*hidden argument*/NULL);
 		V_3 = L_10;
-		// return current >= end && current >= start;
-		float L_11 = V_1;
+		// if (start > end)
+		float L_11 = V_3;
 		float L_12 = V_2;
-		if ((!(((float)L_11) >= ((float)L_12))))
+		if ((!(((float)L_11) > ((float)L_12))))
 		{
-			goto IL_0058;
+			goto IL_005e;
 		}
 	}
 	{
+		// if (current >= start)
 		float L_13 = V_1;
 		float L_14 = V_3;
-		return (bool)((((int32_t)((!(((float)L_13) >= ((float)L_14)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		if ((!(((float)L_13) >= ((float)L_14))))
+		{
+			goto IL_0056;
+		}
+	}
+	{
+		// return false;
+		return (bool)0;
 	}
 
-IL_0058:
+IL_0056:
 	{
-		return (bool)0;
+		// return current >= end;
+		float L_15 = V_1;
+		float L_16 = V_2;
+		return (bool)((((int32_t)((!(((float)L_15) >= ((float)L_16)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+	}
+
+IL_005e:
+	{
+		// return current >= end;
+		float L_17 = V_1;
+		float L_18 = V_2;
+		return (bool)((((int32_t)((!(((float)L_17) >= ((float)L_18)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 }
 // System.Single Task::BaseTen(System.Single)
