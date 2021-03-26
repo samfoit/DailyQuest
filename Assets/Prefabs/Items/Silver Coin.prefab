@@ -70,7 +70,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -100042085
+  m_SortingLayerID: -520008307
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 8266730139402660024, guid: 0bc4ed27aef38a44bb72e80f9beb5326,
@@ -107,21 +107,13 @@ MonoBehaviour:
   value: 20
   itemSprite: {fileID: 8266730139402660024, guid: 0bc4ed27aef38a44bb72e80f9beb5326,
     type: 3}
-  amountToChange: 20
+  percentChange: 0
   affectHp: 0
   affectMP: 0
   affectStr: 0
   weaponStrength: 0
   armorStrength: 0
   abilityStrength: 0
-  fire: 0
-  poison: 0
-  lightning: 0
-  ice: 0
-  elementalDamage: 0
-  dps: 0
-  lifeTime: 0
-  chance: 0
   projectile: {fileID: 0}
 --- !u!58 &1302411668542861441
 CircleCollider2D:

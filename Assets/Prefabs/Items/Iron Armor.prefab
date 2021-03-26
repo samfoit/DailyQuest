@@ -69,7 +69,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -100042085
+  m_SortingLayerID: -520008307
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -6099050445329199328, guid: 0bc4ed27aef38a44bb72e80f9beb5326,
@@ -100,15 +100,17 @@ MonoBehaviour:
   isWeapon: 0
   isArmor: 1
   isAbility: 0
+  isCurrency: 0
   itemName: Iron Armor
   description: +10 DEF
   value: 140
   itemSprite: {fileID: -6099050445329199328, guid: 0bc4ed27aef38a44bb72e80f9beb5326,
     type: 3}
-  amountToChange: 0
+  percentChange: 0
   affectHp: 0
   affectMP: 0
   affectStr: 0
   weaponStrength: 0
   armorStrength: 10
   abilityStrength: 0
+  projectile: {fileID: 0}
