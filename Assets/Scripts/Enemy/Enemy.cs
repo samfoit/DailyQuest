@@ -27,6 +27,7 @@ public class Enemy : MonoBehaviour
     private bool green;
 
     [SerializeField] private bool tutorial;
+    [SerializeField] private bool noDrop;
 
     // Start is called before the first frame update
     void Start()
@@ -102,6 +103,13 @@ public class Enemy : MonoBehaviour
             }
             else
             {
+                if (noDrop)
+                {
+                    Destroy(gameObject);
+                    PlayerStats.instance.AddExp(expToGive);
+                    DialogManager.instance.DisableTalkingOnDeath();
+                    return;
+                }
                 GameManager.instance.SetDropItems(drops);
                 GameManager.instance.DropLootChance(transform);
             }

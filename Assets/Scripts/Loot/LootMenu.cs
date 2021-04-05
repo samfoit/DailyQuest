@@ -20,6 +20,24 @@ public class LootMenu : MonoBehaviour
     public GameObject goldTextPopup;
     public Transform goldTextPosition;
 
+    private bool firstOpen = true;
+    private bool firstClose = true;
+
+    private void Awake()
+    {
+        instance = this;
+
+        if (PlayerPrefs.HasKey("firstOpen"))
+        {
+            firstOpen = false;
+        }
+
+        if (PlayerPrefs.HasKey("firstClose"))
+        {
+            firstClose = false;
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -52,6 +70,12 @@ public class LootMenu : MonoBehaviour
         }
 
         GameManager.instance.isLooting = true;
+        if (firstOpen)
+        {
+            TutorialManager.instance.LootAnimation();
+            firstOpen = false;
+            PlayerPrefs.SetString("firstOpen", "false");
+        }
     }
 
     public void DisableLoot()
@@ -59,6 +83,12 @@ public class LootMenu : MonoBehaviour
         lootMenu.SetActive(false);
         bagIcon.SetActive(false);
         GameManager.instance.isLooting = false;
+        if (firstClose)
+        {
+            TutorialManager.instance.MenuAnimation();
+            firstClose = false;
+            PlayerPrefs.SetString("firstClose", "false");
+        }
     }
 
     public void SetLoot(string[] lootToDrop)

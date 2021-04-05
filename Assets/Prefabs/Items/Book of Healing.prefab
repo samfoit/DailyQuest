@@ -102,7 +102,7 @@ MonoBehaviour:
   isAbility: 1
   isCurrency: 0
   itemName: Book of Healing
-  description: +Heal Spell
+  description: Heals and cures freeze and burn
   value: 100
   itemSprite: {fileID: -3099106671166800866, guid: bef57c2469432474b9d497cfdda16e35,
     type: 3}

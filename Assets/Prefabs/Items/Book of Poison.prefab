@@ -102,7 +102,7 @@ MonoBehaviour:
   isAbility: 1
   isCurrency: 0
   itemName: Book of Poison
-  description: +Poison Spell
+  description: Poisons surrounding enemies
   value: 100
   itemSprite: {fileID: 1148311957159169580, guid: bef57c2469432474b9d497cfdda16e35,
     type: 3}

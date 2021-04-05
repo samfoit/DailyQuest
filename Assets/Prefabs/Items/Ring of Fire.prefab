@@ -102,7 +102,7 @@ MonoBehaviour:
   isAbility: 1
   isCurrency: 0
   itemName: Ring of Fire
-  description: +Fireball Spell
+  description: Shoots giant fireball
   value: 100
   itemSprite: {fileID: -6779814620886407531, guid: 0bc4ed27aef38a44bb72e80f9beb5326,
     type: 3}

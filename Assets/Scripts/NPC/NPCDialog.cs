@@ -23,7 +23,10 @@ public class NPCDialog : MonoBehaviour
         if (collision.tag == "Player")
         {
             dialogButton.SetActive(true);
-            gameObject.GetComponent<NPCMovement>().DontWalk();
+            if (gameObject.GetComponent<NPCMovement>() != null)
+            {
+                gameObject.GetComponent<NPCMovement>().DontWalk();
+            }
         }
     }
 
@@ -32,7 +35,10 @@ public class NPCDialog : MonoBehaviour
         if (collision.tag == "Player")
         {
             dialogButton.SetActive(false);
-            gameObject.GetComponent<NPCMovement>().Walk();
+            if (gameObject.GetComponent<NPCMovement>() != null)
+            {
+                gameObject.GetComponent<NPCMovement>().Walk();
+            }
         }
     }
 

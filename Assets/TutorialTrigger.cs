@@ -8,6 +8,7 @@ public class TutorialTrigger : MonoBehaviour
     public bool mpButton;
     public bool playerStatus;
     public bool tutorial;
+    public bool magic;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -37,6 +38,14 @@ public class TutorialTrigger : MonoBehaviour
                 TutorialManager.instance.tutorial = false;
                 PlayerStats.instance.gameObject.transform.position = new Vector2(-37, 0);
                 PlayerPrefs.SetString("tutorial", "false");
+            }
+            if (magic)
+            {
+                string[] text = { "Hey kid, you want some magic?", "Yeah, I bet you do.", "Here take this.", "Obtained book of magic!" };
+                DialogManager.instance.ShowBox();
+                DialogManager.instance.ShowDialog(text, false);
+                GameManager.instance.RandomSpell();
+                Destroy(gameObject);
             }
         }
     }

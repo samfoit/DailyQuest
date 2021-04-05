@@ -102,7 +102,7 @@ MonoBehaviour:
   isAbility: 1
   isCurrency: 0
   itemName: Book of Strength
-  description: +Buff Spell
+  description: Temporary strength and speed increase
   value: 100
   itemSprite: {fileID: -4290163413885009659, guid: bef57c2469432474b9d497cfdda16e35,
     type: 3}

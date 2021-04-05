@@ -439,4 +439,11 @@ public class GameManager : MonoBehaviour
         AddItem(items[Random.Range(0, items.Length)]);
         SaveInventory();
     }
+
+    public void RandomSpell()
+    {
+        string[] items = { "Ring of Fire", "Ring of Frost", "Book of Healing", "Book of Strength", "Book of Poison", "Book of Lifesteal" };
+        AddItem(items[Random.Range(0, items.Length)]);
+        SaveInventory();
+    }
 }

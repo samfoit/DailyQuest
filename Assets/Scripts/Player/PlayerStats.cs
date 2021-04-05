@@ -377,7 +377,7 @@ public class PlayerStats : MonoBehaviour
         level = 1;
         currentExp = 0;
         money = 20;
-        GameManager.instance.ClearItems();
+        //GameManager.instance.ClearItems();
         GetComponent<Shooter>().SetBaseProjectile();
         SaveStats();
         Cleanse();

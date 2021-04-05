@@ -49,12 +49,14 @@ public class TutorialManager : MonoBehaviour
 
     }
 
+    public void LootAnimation()
+    {
+        animator.SetTrigger("Loot");
+    }
+
     public void MenuAnimation()
     {
-        string[] text = { "Swipe down to access the menu" };
-        DialogManager.instance.ShowBox();
-        DialogManager.instance.ShowDialog(text, false);
-        animator.SetTrigger("Swipe");
+        animator.SetTrigger("Menu");
     }
 
     public void PlayerUIAnimation()

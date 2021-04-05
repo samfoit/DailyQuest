@@ -46,7 +46,6 @@ public class GameMenu : MonoBehaviour
 
     private void Update()
     {
-
         if (activeItem == null)
         {
             itemDetails.SetActive(false);
@@ -57,7 +56,7 @@ public class GameMenu : MonoBehaviour
             canStart = false;
         }
 
-        if (Input.GetMouseButtonDown(0) && Input.mousePosition.y > 350)
+        if (Input.GetMouseButtonDown(0) && Input.mousePosition.y > 350 && Input.mousePosition.x > 300 && Input.mousePosition.x < 1300)
         {
             startInputPos = Input.mousePosition;
             timer -= Time.time;

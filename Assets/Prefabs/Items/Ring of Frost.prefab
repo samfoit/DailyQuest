@@ -102,7 +102,7 @@ MonoBehaviour:
   isAbility: 1
   isCurrency: 0
   itemName: Ring of Frost
-  description: +Frostshot Spell
+  description: Shoots ball of ice
   value: 100
   itemSprite: {fileID: -3663082752619594801, guid: 0bc4ed27aef38a44bb72e80f9beb5326,
     type: 3}
