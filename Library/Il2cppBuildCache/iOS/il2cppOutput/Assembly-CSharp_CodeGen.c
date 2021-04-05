@@ -1052,19 +1052,21 @@ extern void Cutscene_OnEnable_m01EAF8157B93A8CF9A34806A5C23127787DCD890 (void);
 extern void Cutscene_OnDisable_m58E8194470871E82CF5B7D52E997B7A21A8DA112 (void);
 // 0x00000208 System.Void Cutscene::Update()
 extern void Cutscene_Update_mC911CB1D079866C95F2FB2B95FFBD01AF8DF10E9 (void);
-// 0x00000209 System.Void Cutscene::.ctor()
+// 0x00000209 System.Void Cutscene::DestroyAllEnemies()
+extern void Cutscene_DestroyAllEnemies_mEFAE8C718DEE2E19638F45E969935CD84B1ABBBC (void);
+// 0x0000020A System.Void Cutscene::.ctor()
 extern void Cutscene__ctor_m4E018EFF717346CE1E3C2FA7787DD18EE739814A (void);
-// 0x0000020A System.Void UICanvas::Awake()
+// 0x0000020B System.Void UICanvas::Awake()
 extern void UICanvas_Awake_mE73C49EB46B7604C7A11D97350086BC39CDCEAA4 (void);
-// 0x0000020B System.Void UICanvas::.ctor()
+// 0x0000020C System.Void UICanvas::.ctor()
 extern void UICanvas__ctor_m2F21FBF02D5D107C8551DD42747E13744181A77C (void);
-// 0x0000020C System.Void WinScreen::OnEnable()
+// 0x0000020D System.Void WinScreen::OnEnable()
 extern void WinScreen_OnEnable_mF2269DAA9513934122FEE8319402A2E671ECB3FB (void);
-// 0x0000020D System.Void WinScreen::Continue()
+// 0x0000020E System.Void WinScreen::Continue()
 extern void WinScreen_Continue_m9319AE0D63D9D4D4C427FED0AED50FCA067A3765 (void);
-// 0x0000020E System.Void WinScreen::.ctor()
+// 0x0000020F System.Void WinScreen::.ctor()
 extern void WinScreen__ctor_m6D01D26820E170F5597F514EA1236B4ED50AB005 (void);
-static Il2CppMethodPointer s_methodPointers[526] = 
+static Il2CppMethodPointer s_methodPointers[527] = 
 {
 	FocusButton_Awake_m832688F1726A7D5589340C1213110517E22528B4,
 	FocusButton_Press_mD29D6BDFD6ED43054C6B43E1620D3A99FA9B884F,
@@ -1586,6 +1588,7 @@ static Il2CppMethodPointer s_methodPointers[526] =
 	Cutscene_OnEnable_m01EAF8157B93A8CF9A34806A5C23127787DCD890,
 	Cutscene_OnDisable_m58E8194470871E82CF5B7D52E997B7A21A8DA112,
 	Cutscene_Update_mC911CB1D079866C95F2FB2B95FFBD01AF8DF10E9,
+	Cutscene_DestroyAllEnemies_mEFAE8C718DEE2E19638F45E969935CD84B1ABBBC,
 	Cutscene__ctor_m4E018EFF717346CE1E3C2FA7787DD18EE739814A,
 	UICanvas_Awake_mE73C49EB46B7604C7A11D97350086BC39CDCEAA4,
 	UICanvas__ctor_m2F21FBF02D5D107C8551DD42747E13744181A77C,
@@ -1593,7 +1596,7 @@ static Il2CppMethodPointer s_methodPointers[526] =
 	WinScreen_Continue_m9319AE0D63D9D4D4C427FED0AED50FCA067A3765,
 	WinScreen__ctor_m6D01D26820E170F5597F514EA1236B4ED50AB005,
 };
-static const int32_t s_InvokerIndices[526] = 
+static const int32_t s_InvokerIndices[527] = 
 {
 	1904,
 	1904,
@@ -2121,13 +2124,14 @@ static const int32_t s_InvokerIndices[526] =
 	1904,
 	1904,
 	1904,
+	1904,
 };
 extern const CustomAttributesCacheGenerator g_AssemblyU2DCSharp_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	526,
+	527,
 	s_methodPointers,
 	s_InvokerIndices,
 	0,

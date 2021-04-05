@@ -26,6 +26,8 @@ public class Enemy : MonoBehaviour
     public SpriteRenderer sprite;
     private bool green;
 
+    [SerializeField] private bool tutorial;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -93,8 +95,16 @@ public class Enemy : MonoBehaviour
 
         if(currentHealth <= 0)
         {
-            GameManager.instance.SetDropItems(drops);
-            GameManager.instance.DropLootChance(transform);
+            if (tutorial)
+            {
+                GameManager.instance.SetDropItems(drops);
+                GameManager.instance.TutorialLoot(transform);
+            }
+            else
+            {
+                GameManager.instance.SetDropItems(drops);
+                GameManager.instance.DropLootChance(transform);
+            }
             Destroy(gameObject);
             PlayerStats.instance.AddExp(expToGive);
             DialogManager.instance.DisableTalkingOnDeath();

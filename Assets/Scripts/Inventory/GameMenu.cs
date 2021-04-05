@@ -57,7 +57,7 @@ public class GameMenu : MonoBehaviour
             canStart = false;
         }
 
-        if (Input.GetMouseButtonDown(0) && Input.mousePosition.y > 250)
+        if (Input.GetMouseButtonDown(0) && Input.mousePosition.y > 350)
         {
             startInputPos = Input.mousePosition;
             timer -= Time.time;
@@ -84,6 +84,7 @@ public class GameMenu : MonoBehaviour
         {
             startInputPos = Vector2.zero;
             currentInputPos = Vector2.zero;
+            timer = 0.5f;
         }
 
     }

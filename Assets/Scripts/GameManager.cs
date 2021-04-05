@@ -244,6 +244,15 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void TutorialLoot(Transform transform)
+    {
+        GameObject loot = Instantiate(lootBag);
+        loot.transform.position = transform.position;
+
+        loot.GetComponent<LootBag>().GuaranteedLoot(dropItemNames);
+        LootMenu.instance.lootBags.Add(loot);
+    }
+
     public void UpdateDeaths()
     {
         deaths++;

@@ -73,8 +73,10 @@
     <Compile Include="Assets/FocusButton.cs" />
     <Compile Include="Assets/Scripts/Combat/CaveExit.cs" />
     <Compile Include="Assets/Scripts/Task Manager/OrientationManager.cs" />
+    <Compile Include="Assets/TutorialManager.cs" />
     <Compile Include="Assets/Joystick Pack/Scripts/Joysticks/FixedJoystick.cs" />
     <Compile Include="Assets/Scripts/Task Manager/QueuedTask.cs" />
+    <Compile Include="Assets/UICanvas.cs" />
     <Compile Include="Assets/Joystick Pack/Scripts/Joysticks/VariableJoystick.cs" />
     <Compile Include="Assets/Scripts/Combat/ElementalDamage.cs" />
     <Compile Include="Assets/Scripts/Task Manager/TimeText.cs" />
@@ -112,6 +114,7 @@
     <Compile Include="Assets/Scripts/Task Manager/Task.cs" />
     <Compile Include="Assets/Scripts/Popup Text/FloatingText.cs" />
     <Compile Include="Assets/Scripts/Shop/MoneyHealthSlider.cs" />
+    <Compile Include="Assets/WinScreen.cs" />
     <Compile Include="Assets/Scripts/Combat/AbilityButton.cs" />
     <Compile Include="Assets/Scripts/Loot/LootBag.cs" />
     <Compile Include="Assets/Scripts/Task Manager/TaskTimeText.cs" />
@@ -125,16 +128,36 @@
     <Compile Include="Assets/Scripts/Task Manager/Timer.cs" />
     <Compile Include="Assets/Scripts/Combat/Shooter.cs" />
     <Compile Include="Assets/Scripts/Shop/SellMenu.cs" />
+    <Compile Include="Assets/TutorialTrigger.cs" />
     <Compile Include="Assets/Scripts/Enemy/EnemyShooter.cs" />
     <Compile Include="Assets/Scripts/Shop/SellButton.cs" />
     <Compile Include="Assets/Scripts/Item.cs" />
     <Compile Include="Assets/Scripts/Combat/CaveEntrance.cs" />
-    <Compile Include="Assets/WinScreen.cs" />
-    <Compile Include="Assets/UICanvas.cs" />
+    <Compile Include="Assets/TutorialRoomEnter.cs" />
+    <Compile Include="Assets/TutorialRoomExit.cs" />
+    <Compile Include="Assets/TutorialEnemy.cs" />
+    <Compile Include="Assets/TutorialEnemyAi.cs" />
   </ItemGroup>
   <ItemGroup>
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/Udemy RPG Assets/Licence.txt" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
      <None Include="Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF.shader" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Hub/Editor/2020.2.2f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

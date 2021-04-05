@@ -7,7 +7,7 @@ public class CastleInnerExit : MonoBehaviour
     public Tilemap oECollider;
     public Tilemap dark;
 
-    private bool appear = false;
+    public bool appear = false;
 
     // Update is called once per frame
     void Update()

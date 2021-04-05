@@ -7662,8 +7662,8 @@ static const Il2CppTokenRangePair s_rgctxIndices[99] =
 };
 static const Il2CppRGCTXDefinition s_rgctxValues[203] = 
 {
-	{ (Il2CppRGCTXDataType)3, 11220 },
-	{ (Il2CppRGCTXDataType)3, 11227 },
+	{ (Il2CppRGCTXDataType)3, 11221 },
+	{ (Il2CppRGCTXDataType)3, 11228 },
 	{ (Il2CppRGCTXDataType)2, 755 },
 	{ (Il2CppRGCTXDataType)3, 2661 },
 	{ (Il2CppRGCTXDataType)3, 7352 },
@@ -7738,10 +7738,10 @@ static const Il2CppRGCTXDefinition s_rgctxValues[203] =
 	{ (Il2CppRGCTXDataType)2, 181 },
 	{ (Il2CppRGCTXDataType)2, 138 },
 	{ (Il2CppRGCTXDataType)2, 141 },
-	{ (Il2CppRGCTXDataType)3, 10986 },
+	{ (Il2CppRGCTXDataType)3, 10987 },
 	{ (Il2CppRGCTXDataType)2, 140 },
 	{ (Il2CppRGCTXDataType)1, 142 },
-	{ (Il2CppRGCTXDataType)3, 11083 },
+	{ (Il2CppRGCTXDataType)3, 11084 },
 	{ (Il2CppRGCTXDataType)1, 137 },
 	{ (Il2CppRGCTXDataType)2, 137 },
 	{ (Il2CppRGCTXDataType)2, 55 },
@@ -7813,7 +7813,7 @@ static const Il2CppRGCTXDefinition s_rgctxValues[203] =
 	{ (Il2CppRGCTXDataType)1, 461 },
 	{ (Il2CppRGCTXDataType)2, 1282 },
 	{ (Il2CppRGCTXDataType)3, 4991 },
-	{ (Il2CppRGCTXDataType)3, 11055 },
+	{ (Il2CppRGCTXDataType)3, 11056 },
 	{ (Il2CppRGCTXDataType)2, 146 },
 	{ (Il2CppRGCTXDataType)2, 165 },
 	{ (Il2CppRGCTXDataType)2, 163 },
@@ -7841,7 +7841,7 @@ static const Il2CppRGCTXDefinition s_rgctxValues[203] =
 	{ (Il2CppRGCTXDataType)2, 393 },
 	{ (Il2CppRGCTXDataType)2, 167 },
 	{ (Il2CppRGCTXDataType)1, 166 },
-	{ (Il2CppRGCTXDataType)3, 11078 },
+	{ (Il2CppRGCTXDataType)3, 11079 },
 	{ (Il2CppRGCTXDataType)2, 172 },
 	{ (Il2CppRGCTXDataType)2, 173 },
 	{ (Il2CppRGCTXDataType)2, 175 },
@@ -7863,7 +7863,7 @@ static const Il2CppRGCTXDefinition s_rgctxValues[203] =
 	{ (Il2CppRGCTXDataType)3, 8964 },
 	{ (Il2CppRGCTXDataType)3, 8151 },
 	{ (Il2CppRGCTXDataType)3, 8152 },
-	{ (Il2CppRGCTXDataType)3, 11052 },
+	{ (Il2CppRGCTXDataType)3, 11053 },
 	{ (Il2CppRGCTXDataType)3, 8155 },
 };
 extern const CustomAttributesCacheGenerator g_UnityEngine_CoreModule_AttributeGenerators[];

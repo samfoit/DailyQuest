@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3565255476691077777}
   - component: {fileID: 3565255476691077778}
   - component: {fileID: 3565255476691077783}
+  - component: {fileID: -8805208083127852091}
   m_Layer: 0
   m_Name: Loot Bag
   m_TagString: Untagged
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: -520008307
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6297800631036545471, guid: 0bc4ed27aef38a44bb72e80f9beb5326,
+  m_Sprite: {fileID: -6834524911116659543, guid: afc0b6efa995a49aeb5fc3c63082f62f,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -127,3 +128,22 @@ MonoBehaviour:
   - 
   - 
   lootNumber: 0
+--- !u!95 &-8805208083127852091
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3565255476691077779}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: eefffdbac50334426a18f30fdd51a839, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 2
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

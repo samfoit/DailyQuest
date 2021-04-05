@@ -23,6 +23,7 @@ public class DeathScreen : MonoBehaviour
         deathScreen.SetActive(true);
         PlayerStats.instance.Reset();
         GameManager.instance.UpdateDeaths();
+        LootMenu.instance.DisableLoot();
     }
 
     public void TryAgain()

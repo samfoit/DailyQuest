@@ -180,7 +180,10 @@ public class PlayerStats : MonoBehaviour
                 }
             }
             SaveStats();
-            StatsUI.instance.ChangeStatSliders();
+            if (!TutorialManager.instance.tutorial)
+            {
+                StatsUI.instance.ChangeStatSliders();
+            }
         }
     }
 
@@ -359,7 +362,9 @@ public class PlayerStats : MonoBehaviour
     public void Reset()
     {
         maxHealth = 100f;
+        currentHealth = maxHealth;
         maxMana = 100f;
+        currentMana = maxMana;
         strength = 1f;
         abilityDamage = 1f;
         defense = 1f;
@@ -376,6 +381,7 @@ public class PlayerStats : MonoBehaviour
         GetComponent<Shooter>().SetBaseProjectile();
         SaveStats();
         Cleanse();
+        StatsUI.instance.ChangeStatSliders();
     }
 
     public void StartAgain()

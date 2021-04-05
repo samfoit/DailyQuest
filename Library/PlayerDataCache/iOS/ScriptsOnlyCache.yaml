@@ -97,6 +97,7 @@ ScriptsOnlyBuild:
     Unity.Timeline.Editor.dll:
     - TimelinePreferences
     - UnityEditor.Timeline.SequenceHierarchy
+    - UnityEditor.Timeline.TimelineAssetViewModel
     - UnityEditor.Timeline.TimelineWindow
     Unity.Timeline.dll:
     - UnityEngine.Timeline.ActivationPlayableAsset
@@ -109,8 +110,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -859,7 +862,7 @@ ScriptsOnlyBuild:
     className: CinemachinePipeline
   - hash:
       serializedVersion: 2
-      Hash: 86e5f3d337e14ab290cec4ff9965fd16
+      Hash: 04d0b332ec1f4df2f232d54c31c02bec
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CastleOuterExit
@@ -1387,7 +1390,7 @@ ScriptsOnlyBuild:
     className: CinemachineStoryboard
   - hash:
       serializedVersion: 2
-      Hash: 9bf87dc8a27c5d2c151dfff5f6edcbc7
+      Hash: e576b3f9ea892e92fcaecf992754b2c0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WinScreen
@@ -1477,7 +1480,7 @@ ScriptsOnlyBuild:
     className: GroupWeightManipulator
   - hash:
       serializedVersion: 2
-      Hash: ba6531d1dec89a7e872fc6d78b5554f3
+      Hash: 951a6ca256e29e84a86de7376ad00b63
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CastleInnerExit
@@ -1640,4 +1643,4 @@ ScriptsOnlyBuild:
   platform: 9
   scenePathNames:
   - Assets/Scenes/Game.unity
-  playerPath: /Users/samfoit/Documents/Daily Quest Build
+  playerPath: /Users/samfoit/Desktop/Daily Quest

@@ -1,13 +1,13 @@
 ﻿<Properties StartupConfiguration="{9DFD065A-8B6A-6173-7E5A-45EBC779A579}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Task Manager/Task.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Loot/LootBag.cs">
     <Files>
-      <File FileName="Assets/Scripts/Task Manager/Task.cs" Line="39" Column="49" />
-      <File FileName="Assets/FocusButton.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Loot/LootMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Loot/LootBag.cs" Line="78" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="58a95cd9-90ee-49e0-ac67-48c18d2fbfc7" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d1a846f8-c343-4333-901c-64869d266ae7" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

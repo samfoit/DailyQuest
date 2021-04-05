@@ -8,7 +8,7 @@ public class CastleOuterExit : MonoBehaviour
     public Tilemap oECollider;
     public Collider2D worldBoundary;
 
-    private bool appear = false;
+    public bool appear = false;
 
     // Update is called once per frame
     void Update()

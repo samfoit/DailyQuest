@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class LootBag : MonoBehaviour
 {
@@ -30,6 +28,8 @@ public class LootBag : MonoBehaviour
             LootMenu.instance.SetLoot(lootToDrop);
             LootMenu.instance.EnableLoot();
             LootMenu.instance.SetLootBagNumber(lootNumber);
+            GetComponent<Animator>().SetBool("Open", true);
+            Time.timeScale = 0;
         }
     }
 
@@ -38,6 +38,7 @@ public class LootBag : MonoBehaviour
         if (other.tag == "Player")
         {
             LootMenu.instance.DisableLoot();
+            Time.timeScale = 1;
         }
     }
 
@@ -66,6 +67,15 @@ public class LootBag : MonoBehaviour
                     }
                 }
             }
+        }
+    }
+
+    public void GuaranteedLoot(string[] loot)
+    {
+        for (int i = 0; i < loot.Length; i++)
+        {
+            if (loot[i] == "") { return; }
+            lootToDrop[i] = loot[i];
         }
     }
 

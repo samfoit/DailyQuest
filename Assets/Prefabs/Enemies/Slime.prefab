@@ -114,6 +114,7 @@ MonoBehaviour:
   doTDamage: 0
   poisoned: 0
   sprite: {fileID: 0}
+  tutorial: 0
 --- !u!61 &8777630411830811678
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -131,7 +132,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.5833333, y: 0.5}
+    oldSize: {x: 0.875, y: 0.75}
     newSize: {x: 0.5833333, y: 0.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -538,7 +539,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: -100042085
+  m_SortingLayerID: -520008307
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!114 &8777630412544863409
@@ -563,7 +564,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &8777630412544863422
 MonoBehaviour:
   m_ObjectHideFlags: 0
