@@ -1,25 +1,16 @@
 ﻿<Properties StartupConfiguration="{9DFD065A-8B6A-6173-7E5A-45EBC779A579}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/NPC/NPCDialog.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/DeathScreen.cs">
     <Files>
-      <File FileName="Assets/Scripts/Loot/LootMenu.cs" Line="149" Column="6" />
-      <File FileName="Assets/Scripts/Loot/LootBag.cs" Line="84" Column="52" />
-      <File FileName="Assets/Scripts/Player/DeathScreen.cs" Line="32" Column="44" />
-      <File FileName="Assets/Scripts/Player/PlayerStats.cs" Line="378" Column="24" />
-      <File FileName="Assets/TutorialManager.cs" Line="54" Column="37" />
-      <File FileName="Assets/TutorialTrigger.cs" Line="48" Column="37" />
-      <File FileName="Assets/Scripts/GameManager.cs" Line="447" Column="25" />
-      <File FileName="Assets/TutorialEnemy.cs" Line="19" Column="2" />
-      <File FileName="Assets/TutorialEnemyAi.cs" Line="7" Column="1" />
-      <File FileName="Assets/RedScreen.cs" Line="23" Column="10" />
-      <File FileName="Assets/Scripts/Enemy/Enemy.cs" Line="112" Column="17" />
-      <File FileName="Assets/Scripts/Inventory/GameMenu.cs" Line="48" Column="6" />
-      <File FileName="Assets/Scripts/Task Manager/Task.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/NPC/NPCDialog.cs" Line="26" Column="42" />
+      <File FileName="Assets/Scripts/Combat/CaveExit.cs" Line="44" Column="63" />
+      <File FileName="Assets/Scripts/Combat/CastleOuterExit.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Combat/CastleInnerExit.cs" Line="45" Column="66" />
+      <File FileName="Assets/Scripts/Player/DeathScreen.cs" Line="61" Column="55" />
+      <File FileName="Assets/Scripts/Combat/TriggerSpawner.cs" Line="13" Column="52" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d1a846f8-c343-4333-901c-64869d266ae7" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6e510a13-5ac6-4c7e-bd5d-772ac0997355" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

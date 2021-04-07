@@ -38,12 +38,6 @@ public class LootMenu : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        instance = this;
-    }
-
     private void Update()
     {
         HandleLoot();
@@ -73,8 +67,8 @@ public class LootMenu : MonoBehaviour
         if (firstOpen)
         {
             TutorialManager.instance.LootAnimation();
-            firstOpen = false;
             PlayerPrefs.SetString("firstOpen", "false");
+            firstOpen = false;
         }
     }
 
@@ -86,8 +80,8 @@ public class LootMenu : MonoBehaviour
         if (firstClose)
         {
             TutorialManager.instance.MenuAnimation();
-            firstClose = false;
             PlayerPrefs.SetString("firstClose", "false");
+            firstClose = false;
         }
     }
 

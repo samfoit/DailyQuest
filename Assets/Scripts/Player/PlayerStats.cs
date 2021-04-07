@@ -371,13 +371,15 @@ public class PlayerStats : MonoBehaviour
         wpnPwr = 0;
         armPwr = 0;
         abPwr = 0;
+        /*
         equippedArmr = "";
         equippedWpn = "";
         equippedAb = "";
+        GameManager.instance.ClearItems();
+        */
         level = 1;
         currentExp = 0;
         money = 20;
-        //GameManager.instance.ClearItems();
         GetComponent<Shooter>().SetBaseProjectile();
         SaveStats();
         Cleanse();

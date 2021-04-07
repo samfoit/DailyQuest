@@ -37,4 +37,10 @@ public class CaveExit : MonoBehaviour
     {
         appear = false;
     }
+
+    public void Restart()
+    {
+        appear = true;
+        FindObjectOfType<CaveEntrance>().CancelCaveEntrance();
+    }
 }

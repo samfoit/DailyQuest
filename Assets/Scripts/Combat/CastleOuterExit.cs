@@ -39,4 +39,10 @@ public class CastleOuterExit : MonoBehaviour
     {
         appear = false;
     }
+
+    public void Restart()
+    {
+        appear = true;
+        FindObjectOfType<CastleOuterEntrance>().CancelEntrance();
+    }
 }
